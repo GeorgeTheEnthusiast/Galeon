@@ -26,5 +26,12 @@ namespace Galeon.Controllers
 
             return View();
         }
+
+        public ActionResult Get(string id, string name)
+        {
+            ViewBag.Message = $"Your name [{name}] got id [{id}]";
+
+            return View();
+        }
     }
 }
